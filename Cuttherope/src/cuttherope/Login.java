@@ -8,6 +8,10 @@ package cuttherope;
  *
  * @author ANGILI PALACIOS
  */
+import cuttherope.excepciones.CamposVacios;
+import cuttherope.excepciones.ContrasenaIncorrecta;
+import cuttherope.excepciones.ErrorJuego;
+import cuttherope.excepciones.UsuarioInexistente;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -48,4 +52,40 @@ private JTextField usuario;
             ojo.setIcon(tachado);
         }
     }
+    private void iniciar() {
+    try {
+        String user = usuario.getText().trim();
+        String pass = new String(contrasena.getPassword());
+
+        if (user.isEmpty() || pass.isEmpty()) {
+            throw new CamposVacios();
+        }
+
+        if (!existe(user)) {
+            throw new UsuarioInexistente();
+        }
+
+        if (!correcta(user, pass)) {
+            throw new ContrasenaIncorrecta();
+        }
+
+        JOptionPane.showMessageDialog(this, "Bienvenido " + user);
+        dispose();
+    } catch (ErrorJuego ex) {
+        JOptionPane.showMessageDialog(this, ex.getMessage());
+    }
+}
+
+    private void crearCuenta() {
+        dispose();
+    }
+
+    private boolean existe(String user) {
+        return true;
+    }
+
+    private boolean correcta(String user, String pass) {
+        return true;
+    }
+
 }
