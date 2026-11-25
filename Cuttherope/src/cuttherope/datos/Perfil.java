@@ -8,6 +8,8 @@ package cuttherope.datos;
  *
  * @author ANGILI PALACIOS
  */
-public class Perfil {
+import java.io.Serializable;
+public class Perfil implements Serializable {
+    public String usuario, nombre, contrasena, fechaRegistro, ultimaSesion, avatar;
     
 }
