@@ -8,6 +8,9 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class ContrasenaIncorrecta {
+public class ContrasenaIncorrecta extends ErrorJuego {
+    public ContrasenaIncorrecta(){
+        super("Contraseña incorrecta");
+    }
     
 }

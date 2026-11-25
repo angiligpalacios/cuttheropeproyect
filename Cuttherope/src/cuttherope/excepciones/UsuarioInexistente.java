@@ -8,6 +8,9 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class UsuarioInexistente {
+public class UsuarioInexistente extends ErrorJuego {
+    public UsuarioInexistente(){
+        super("Usuario inexistente");
+    }
     
 }

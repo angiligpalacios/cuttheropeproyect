@@ -8,6 +8,8 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class ErrorJuego {
-    
+public class ErrorJuego extends Exception{
+    public ErrorJuego(String mensaje){
+        super(mensaje);
+    }
 }

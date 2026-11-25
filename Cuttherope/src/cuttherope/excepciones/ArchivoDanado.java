@@ -8,6 +8,8 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class ArchivoDanado {
-    
+public class ArchivoDanado extends ErrorJuego {
+    public ArchivoDanado(){
+    super("No se pudo leer el archivo");
+}
 }

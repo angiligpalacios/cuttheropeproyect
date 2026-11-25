@@ -8,6 +8,8 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class CamposVacios {
-    
+public class CamposVacios extends ErrorJuego{
+    public CamposVacios(){
+        super("Campos Vacios");
+    }
 }
