@@ -8,6 +8,8 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class ContrasenasNoCoinciden {
-    
+public class ContrasenasNoCoinciden extends ErrorJuego{
+ public ContrasenasNoCoinciden() {
+        super("Las contraseñas no coinciden");
+    }   
 }

@@ -8,6 +8,9 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class UsuarioConEspacios {
+public class UsuarioConEspacios extends ErrorJuego {
+    public UsuarioConEspacios(){
+        super("El usuario no puede tener espacios");
+    }
     
 }

@@ -8,6 +8,8 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class ContrasenaInvalida {
-    
+public class ContrasenaInvalida extends ErrorJuego{
+ public ContrasenaInvalida() {
+        super("La contraseña no cumple los requisitos");
+    }   
 }

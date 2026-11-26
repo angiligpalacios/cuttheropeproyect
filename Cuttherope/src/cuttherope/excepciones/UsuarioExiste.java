@@ -8,6 +8,9 @@ package cuttherope.excepciones;
  *
  * @author ANGILI PALACIOS
  */
-public class UsuarioExiste {
+public class UsuarioExiste extends ErrorJuego {
+    public UsuarioExiste(){
+        super("El usuario ya existe");
+    }
     
 }
