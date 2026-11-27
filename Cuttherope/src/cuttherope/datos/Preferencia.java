@@ -8,6 +8,13 @@ package cuttherope.datos;
  *
  * @author ANGILI PALACIOS
  */
-public class Preferencia {
-    
+import java.io.Serializable;
+public class Preferencia implements Serializable{
+    public int volumenMusica = 80;
+    public int volumenEfectos = 80;
+    public String idioma = "es";
+    public boolean musica = true;
+    public String pista = "1";
+    public String avatar = "1";
+  
 }
